@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --Rose-800: hsl(332, 51%, 32%);
+}
+
+/* reset css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Young Serif", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+p,
+h1,
+h2,
+h4 {
+  margin-top: 0;
+}
+/* //////////////// */
+
+/* font size set up */
+.xlg-text {
+  font-size: 32px;
+  color: var(--Stone-900);
+}
+.lg-text {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.med-text {
+  color: var(--Stone-600);
+}
+#preparation-text {
+  color: var(--Rose-800);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1rem;
+}
+.bold-text {
+  color: var(--Stone-900);
+  font-weight: 600;
+}
+.brwn-text {
+  color: var(--Brown-800);
+}
+/* //////////////// */
+
+section {
+  background-color: var(--Stone-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: var(--White);
+  border-radius: 1rem;
+  padding: 3rem;
+  min-width: 375px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.div-img {
+  min-width: 100%;
+}
+main div img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+.tittle p {
+  margin-top: 1rem;
+}
+.tittle .tittle__duration {
+  background-color: var(--Rose-50);
+  border-radius: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-top: 2rem;
+}
+.tittle__duration ul {
+  padding-left: 1.5rem;
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+}
+.ingridients {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  ul {
+    padding-left: 1rem;
+    li {
+      padding-left: 1rem;
+    }
+  }
+}
+.instruction {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  ol {
+    padding-left: 1rem;
+    li {
+      padding-left: 1rem;
+    }
+  }
+}
+.nutrition {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+table {
+  width: 100%;
+}
+td {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  padding-left: 1rem;
+}
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Stone-900);
+}
+
+/* i use this media query to handle image so that can widen on phone screen */
+@media (max-width: 480px) {
+  main {
+    padding: 2rem;
+  }
+  .div-img {
+    margin: -2rem -2rem 0 -2rem;
+  }
+  main div img {
+    border-radius: 0;
+    width: 100vw;
+  }
+}
